@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🧩 Component Collection Project
 
-## Getting Started
+This project is a growing collection of reusable React components, currently focused on file upload functionality. The project is structured to allow for easy expansion and addition of new components in the future.
 
-First, run the development server:
+## 🗂️ Key Directories
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- `app`: Contains the main application files, including the layout and pages.
+- `components`: Houses all the reusable components, divided into global and UI components.
+- `constants`: Stores constant values and configurations used across the project.
+- `lib`: Contains utility functions and helper methods.
+- `types`: Includes TypeScript type definitions for the project.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository
+2. Install dependencies:
+   ```
+   npm install
+   ```
+   or
+   ```
+   yarn install
+   ```
+3. Run the development server:
+   ```
+   npm run dev
+   ```
+   or
+   ```
+   yarn dev
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 📦 Available Components
 
-## Learn More
+Currently, the project includes the following main components:
 
-To learn more about Next.js, take a look at the following resources:
+1. 📥 **Dropzone**: A file upload component that allows users to drag and drop files or select them from their device.
+   - File: `components/global/dropzone.tsx`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. 📊 **Dashboard**: A component for displaying and managing uploaded files or other relevant information.
+   - File: `components/global/dashboard.tsx`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+More components will be added in the future as the project grows.
 
-## Deploy on Vercel
+## ➕ Adding New Components
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To add new components to the collection:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Create a new file in the appropriate directory under `components/`.
+2. Implement your component using React and TypeScript.
+3. Export the component from the `components/global/index.ts` file if it's a global component.
+4. Update this README to reflect any significant additions or changes to the project structure.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+[Add your chosen license here]
